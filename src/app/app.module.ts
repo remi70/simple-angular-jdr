@@ -11,6 +11,12 @@ import {SidebarModule} from 'primeng/sidebar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HerosformComponent } from './components/herosform/herosform.component';
 import {ButtonModule} from 'primeng/button';
+import {RadioButtonModule} from 'primeng/radiobutton';
+import { FormsModule } from '@angular/forms';
+import {InputTextModule} from 'primeng/inputtext';
+import { HeroslistComponent } from './components/heroslist/heroslist.component';
+import {TableModule} from 'primeng/table';
+
 
 
 
@@ -22,6 +28,7 @@ import {ButtonModule} from 'primeng/button';
     SidenavComponent,
     HeaderComponent,
     HerosformComponent,
+    HeroslistComponent,
     
   ],
   imports: [
@@ -29,7 +36,11 @@ import {ButtonModule} from 'primeng/button';
     AppRoutingModule,
     SidebarModule,
     BrowserAnimationsModule,
-    ButtonModule
+    ButtonModule,
+    RadioButtonModule,
+    FormsModule,
+    InputTextModule,
+    TableModule
     
     
     

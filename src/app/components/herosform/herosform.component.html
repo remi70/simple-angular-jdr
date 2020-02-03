@@ -1,1 +1,27 @@
-<p>herosform works!</p>
+<h3 class="first">Choisissez vos héros</h3>
+<div class="ui-g" style="width:250px;margin-bottom:10px">
+    <div class="ui-g-12">
+        <p-radioButton #ship name="group1" value="Archer" label="Archer" [(ngModel)]="val1" inputId="opt1"></p-radioButton>
+    </div>
+    <div class="ui-g-12">
+        <p-radioButton name="group1" value="Guerrier" label="Guerrier" [(ngModel)]="val1" inputId="opt2"></p-radioButton>
+    </div>
+    <div class="ui-g-12">
+        <p-radioButton name="group1" value="Assassin" label="Assassin" [(ngModel)]="val1" inputId="opt3"></p-radioButton>
+    </div>
+    <div class="ui-g-12">
+        <p-radioButton name="group1" value="Soigneur" label="Soigneur" [(ngModel)]="val1" inputId="opt4"></p-radioButton>
+    </div>
+
+    <h3 class="first" *ngIf="!ship.check">Choisissez une arme pour votre héros</h3>
+
+    <div class=" ui-g-12 " *ngIf=" !ship.checked ">
+        <p-radioButton name="group2 " value="Epee " label="Epée " [(ngModel)]="val2 " inputId="opt1 "></p-radioButton>
+    </div>
+    <div class="ui-g-12 " *ngIf=" !ship.checked ">
+        <p-radioButton name=" group2 " value="Massue " label="Massue " [(ngModel)]="val2 " inputId="opt2 "></p-radioButton>
+    </div>
+</div>
+
+<h3 class="first">Quel est le nom de votre héros ?</h3>
+<input id="input" type="text" size="30" pInputText [(ngModel)]="text"> <button id="disabled-btn" type="button" (click)="toggleDisabled()" pButton label="Toggle"></button>
