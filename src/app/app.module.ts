@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import {InputTextModule} from 'primeng/inputtext';
 import { HeroslistComponent } from './components/heroslist/heroslist.component';
 import {TableModule} from 'primeng/table';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -40,7 +41,8 @@ import {TableModule} from 'primeng/table';
     RadioButtonModule,
     FormsModule,
     InputTextModule,
-    TableModule
+    TableModule,
+    HttpClientModule
     
     
     

@@ -1,27 +1,27 @@
 import { Component, OnInit } from '@angular/core';
+import { HerosHttpService } from 'src/app/services/heros-http.service';
 
 @Component({
-  selector: 'app-heroslist',
+  selector   : 'app-heroslist',
   templateUrl: './heroslist.component.html',
-  styleUrls: ['./heroslist.component.scss']
+  styleUrls  : ['./heroslist.component.scss']
 })
 export class HeroslistComponent implements OnInit {
 
-  cars: Car[];
 
-    cols: any[];
 
-    constructor(private carService: CarService) { }
+    constructor(/*private gameService:GameService, private heroHttpService:HerosHttpService,private router:Router*/) { }
 
     ngOnInit() {
-        this.carService.getCarsSmall().then(cars => this.cars = cars);
 
-        this.cols = [
-            { field: 'vin', header: 'Vin' },
-            {field: 'year', header: 'Year' },
-            { field: 'brand', header: 'Brand' },
-            { field: 'color', header: 'Color' }
-        ];
+     /* ngOnInit() {
+        this.heroHttpService.getHeros().suscribe(
+          (data:Heros[])=> {this.data = data;},
+          err => {console.warn(err);}
+
+      
     }
-
+*/
 }
+}
+
